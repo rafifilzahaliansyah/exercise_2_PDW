@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-txt">
+            <div class="header">
+                <h3>Pendaftaran Vaksin</h3>
+            </div>
+            <form action="">
+                <div class="form-group">
+                    <label for="nama">Nama</label><br>
+                    <input class="label-nama" type="text" placeholder="Nama Anda" id="nama">
+                </div>
+                <div class="form-group">
+                    <label for="nim">NIK</label><br>
+                    <input class="label-nim" type="text" placeholder="NIK Anda" id="nim">
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Vaksin</label><br>
+                    <input type="date" id="tanggal">
+                </div>
+                <div class="form-group">
+                    <label for="lokasi">Lokasi Vaksin</label><br>
+                    <select id="lokasi">
+                        <option value="Sleman">Sleman</option>
+                        <option value="Bantul">Bantul</option>
+                        <option value="Kota Yogya">Kota Yogya</option>
+                        <option value="Kulon Progo">Kulon Progo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Jenis Vaksin</label><br>
+                    <input type="radio" name="vaksin" id="sinovac" value="Sinovac">
+                    <label for="sinovac">Sinovac</label><br>
+                    <input type="radio" name="vaksin" id="astrazeneca" value="AstraZeneca">
+                    <label for="astrazeneca">AstraZeneca</label><br>
+                    <input type="radio" name="vaksin" id="pfizer" value="Pfizer">
+                    <label for="pfizer">Pfizer</label><br>
+                    <input type="radio" name="vaksin" id="sinopharm" value="Sinopharm">
+                    <label for="sinopharm">Sinopharm</label>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat</label><br>
+                    <textarea placeholder="Tulis alamatmu di sini" name="alamat" id="alamat" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="saran">Saran</label><br>
+                    <textarea placeholder="Tulis saranmu di sini" name="saran" id="saran" cols="30" rows="5"></textarea>
+                </div>
+                
+                <button class="back" type="button" onclick="kirimdata()">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function kirimdata() {
+            // Code to handle form submission and redirect
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
